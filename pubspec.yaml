@@ -9,7 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  ffmpeg_kit_flutter_new: 1.6.1  # Lock to avoid 1.7.0 upgrade
+  ffmpeg_kit_flutter_new: 1.6.1
 
 flutter:
   uses-material-design: true

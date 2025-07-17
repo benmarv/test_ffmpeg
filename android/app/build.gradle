@@ -28,7 +28,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.test_ffmpeg"
-        minSdkVersion 24  // Explicitly set for compatibility
+        minSdkVersion 24
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
@@ -42,7 +42,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.arthenica:ffmpeg-kit-full:6.1'  // Update to 6.1 for 1.7.0
+    implementation 'com.arthenica:ffmpeg-kit-full:6.1'  // Match with 1.7.0
 }
 
 flutter {
