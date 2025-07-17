@@ -3,13 +3,12 @@ buildscript {
     repositories {
         google()
         mavenCentral()
-        maven { url 'https://storage.googleapis.com/download.flutter.io' } // Ensure Flutter repo
+        maven { url 'https://storage.googleapis.com/download.flutter.io' }  // Add Flutter repo
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:8.1.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        // Use the latest flutter-gradle-plugin version compatible with your Flutter SDK
-        classpath 'dev.flutter:flutter-gradle-plugin:1.0.0' // Check for a newer version if needed
+        classpath 'dev.flutter:flutter-gradle-plugin:1.0.0'  // Use 1.0.0 for now
     }
 }
 
@@ -17,7 +16,19 @@ allprojects {
     repositories {
         google()
         mavenCentral()
-        maven { url 'https://jitpack.io' } // For FFmpegKit
-        maven { url 'https://storage.googleapis.com/download.flutter.io' } // Ensure Flutter repo
+        maven { url 'https://jitpack.io' }  // For FFmpegKit
+        maven { url 'https://storage.googleapis.com/download.flutter.io' }  // Ensure plugin availability
     }
+}
+
+rootProject.buildDir = "../build"
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
 }
