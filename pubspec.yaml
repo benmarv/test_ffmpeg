@@ -1,4 +1,4 @@
-name: test_ffmpeg_new
+name: test_ffmpeg
 description: A new Flutter project.
 publish_to: 'none'
 version: 1.0.0+1
@@ -9,7 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  ffmpeg_kit_flutter_new: 1.6.1
+  ffmpeg_kit_flutter_new: 1.6.1  # Lock to avoid 1.7.0 upgrade
 
 flutter:
   uses-material-design: true
