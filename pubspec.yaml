@@ -1,0 +1,15 @@
+name: test_ffmpeg_new
+description: A new Flutter project.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  ffmpeg_kit_flutter_new: ^1.6.1
+
+flutter:
+  uses-material-design: true
