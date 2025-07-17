@@ -1,6 +1,6 @@
 {
-    "name": "test_ffmpeg",
-    "short_name": "test_ffmpeg",
+    "name": "linkon_social",
+    "short_name": "linkon_social",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

@@ -1,0 +1,2 @@
+C:/Users/PC 7/Documents/GitHub/socio/android/app/.cxx/RelWithDebInfo/6f4f1b6n/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/PC 7/Documents/GitHub/socio/android/app/.cxx/RelWithDebInfo/6f4f1b6n/armeabi-v7a/CMakeFiles/rebuild_cache.dir
